@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>notes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p>list node</p>
+    <tr th:each="note: ${notes}">
+        <td th:text="${note.title}" /> <br />
+        <td th:text="${note.content}" /> <br />
+    </tr>
+</body>
+</html>

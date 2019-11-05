@@ -1,0 +1,8 @@
+---
+applications:
+- name: bootjava
+  memory: 1G
+  instances: 1
+  random-route: true
+  buildpacks:
+  - https://github.com/cloudfoundry/java-buildpack.git#v4.24
