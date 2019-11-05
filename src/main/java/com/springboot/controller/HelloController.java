@@ -27,11 +27,12 @@ public class HelloController {
     @Autowired
     private NoteRepository noteRepository;
 
+  
+
     @RequestMapping(value="/index" , method=RequestMethod.GET)  
     public String index() {
         return "index";
     }
-
 
     @RequestMapping(value="/save", method=RequestMethod.GET)  
     public ModelAndView save(){  

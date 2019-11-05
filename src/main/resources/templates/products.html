@@ -1,23 +1,14 @@
-<html lang="en">  
-    <head>  
-        <title>Index Page</title>  
-    </head>  
-    <body>  
-        <form action="save" method="post">  
-            <table>  
-                <tr>  
-                    <td><label for="user-name">User Name</label></td>  
-                    <td><input type="text" name="name"></input></td>  
-                </tr>  
-                <tr>  
-                    <td><label for="email">Email</label></td>  
-                    <td><input type="text" name="email"></input></td>  
-                </tr>  
-                <tr>  
-                    <td></td>  
-                    <td><input type="submit" value="Submit"></input></td>  
-                </tr>  
-            </table>  
-        </form>  
-    </body>  
-</html>  
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>product</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p>product</p>
+    <tr th:each="product: ${products}">
+        <td th:text="${product.name}" /> <br />                            
+        <td th:text="${product.description}" /> <br />
+    </tr>
+</body>
+</html>
